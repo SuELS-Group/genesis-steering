@@ -1,5 +1,4 @@
-"""Pooled top / bottom 128 by membership score, steered at layer 16 on five benchmarks (, point 3 = B,
-point 7 = c).
+"""Pooled top / bottom 128 by membership score, steered at layer 16 on five benchmarks.
 
     pools       per pole, the rows of part 3's token panel from the seven datasets (WildGuardMix, WildJailbreak, CoCoNot,
                 CoCoNot left out, Do-Not-Answer, HH-RLHF, PKU-SafeRLHF), all pooled; CAA is left out (its poles share a
@@ -163,7 +162,7 @@ def _labels(model_key):
                         (ldir(model_key) / f"completions_{model_key}.jsonl", ldir(model_key) / f"judge_{model_key}.jsonl"), (T.DUMP, scoring.JUDGE)):
         if not (Path(dump).exists() and Path(judge).exists()):
             continue
-        only_base = Path(dump) == Path(T.DUMP)      # part 2's dump is layer 13: only its unsteered baseline belongs here (bug fixed 
+        only_base = Path(dump) == Path(T.DUMP)      # part 2's dump is layer 13: only its unsteered baseline belongs here (bug fixed:
                                                     # its layer-13 rows of the same arm names had overwritten the layer-16 labels)
         for r in map(json.loads, open(judge)):
             if r.get("model") == model_key and r.get("judge_label") in ("A", "B", "C", "D") and (not only_base or r["arm"] == "baseline"):
@@ -321,7 +320,7 @@ def ranges(n_boot=1000):
                             "cum": {str(d): float(np.mean([np.isfinite(t) and t <= d for t in first])) for d in g}}
                 if r is None:
                     continue
-                # S = mean of the two halves 
+                # S = mean of the two halves
                 harm = list(scoring.HARM_EVALS); ben = [e for e in scoring.EVALS if e not in scoring.HARM_EVALS] + ["alpaca"]
                 r["jailbreak"] = float(np.mean([r[e]["range"] for e in harm]))
                 r["over-refusal"] = float(np.mean([r[e]["range"] for e in ben]))

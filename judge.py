@@ -17,7 +17,7 @@ Output (--out):  JSONL, one row per unique key: the key fields, judge_model, jud
                  text is written. Resumable: keys already in --out
                  are skipped, so the same command continues an interrupted run.
 
-Used by parts 2 and 3.17 / 7.18).
+Used by parts 2 and 3.
 
     python judge.py --dump results/completions.jsonl --out results/judge.jsonl
 """

@@ -103,7 +103,7 @@ def steer(model_key, doses=T.DOSES):
     import mia_quartile as Q
     old = dict(np.load(VECS)) if VECS.exists() else {}
     todo = [c for c in T.grid_cells(model_key, doses, ARMS) if c[1] != "baseline" and (model_key, *c) not in B._done(STEER_COMP)]
-    prio = [6, 4, 8, 2, 10, 12]                       # the operating dose first, for early results 
+    prio = [6, 4, 8, 2, 10, 12]                       # the operating dose first, for early results
     todo.sort(key=lambda c: prio.index(abs(c[2])) if abs(c[2]) in prio else len(prio))
     have = all(f"{model_key}/dir/{a}{s}" in old for a in ARMS for s in ("", "_safety"))
     if not todo and have:
@@ -297,7 +297,7 @@ POOL_ACTS_MEAN = OUT / "pool_acts_mean_{}.npz"
 def pool_acts_mean(model_key):
     """caa_mean's recipe on WildGuardMix's SFT-pool draws: the prompt with the gold answer teacher-forced (Tülu: the mixture
     turn; Meta-Llama: the release response), hidden_states[13] averaged over the answer's tokens. For the WildGuardMix + CAA
-    mix , which needs both datasets at the same site."""
+    mix, which needs both datasets at the same site."""
     f = Path(str(POOL_ACTS_MEAN).format(model_key))
     if f.exists():
         print(f"[{model_key}] pool answer-mean acts exist"); return

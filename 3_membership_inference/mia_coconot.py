@@ -1,6 +1,6 @@
 """CoCoNot: the top against the bottom of the membership ranking on Tülu-3-8B, with small extremes.
 
-are the
+Are the
 lowest-scored examples also the best for steering on CoCoNot, with vectors from just the top 24 and the bottom 24?
 
   pools     both poles training data of Tülu:

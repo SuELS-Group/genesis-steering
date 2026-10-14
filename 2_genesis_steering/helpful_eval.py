@@ -1,9 +1,9 @@
-"""A general-helpfulness evaluation benchmark for the +alpha direction .
+"""A general-helpfulness evaluation benchmark for the +alpha direction.
 
 WHY. Every benign benchmark in this repository is of one genre: a prompt that is safe but *looks* unsafe
 (`xstest_safe`, `orbench`, and `behaviour.py`'s held-out OR-Bench-hard set). Those sit close to the model's refusal
 boundary, so almost any push along a refusal-ish direction flips them, and at |alpha| = 8
-grid reaches 1.000 on XSTest-safe — the direction has no resolution. That run could therefore only read its
+every arm of the steering grid reaches 1.000 on XSTest-safe — the direction has no resolution. That run could therefore only read its
 top-against-bottom difference off HarmBench, the -alpha (suppress refusal) direction.
 
 This set is the opposite genre: plainly benign, plainly useful instructions with no safety hook at all, where refusing

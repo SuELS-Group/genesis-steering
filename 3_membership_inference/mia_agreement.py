@@ -1,5 +1,4 @@
-"""Agreement between membership methods, and what the agreement has to do with the training data (, 
-"how much the different methods agree, and also how this relates to the actual training data").
+"""Agreement between membership methods, and what the agreement has to do with the training data.
 
     rows        the token-score panel of mia_panel.py on both models (results/mia_panel, results/mia_panel_meta), the same
                 12,581 rows; CAA's A/B letter rows left out (three-token answers: Min-K and loss coincide there)

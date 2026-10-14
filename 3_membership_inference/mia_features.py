@@ -1,5 +1,5 @@
-"""What the membership scores pick up: surface features of the text, or more (, , paper item: "is it register,
-length, or something more complex?").
+"""What the membership scores pick up: surface features of the text, or more: is it register,
+length, or something more complex?
 
     rows        the token panel of mia_panel.py (both templates, the same rows): the pooled refusal and compliance poles (all
                 datasets and CAA's authored answers; CAA's letter rows and the matched split left out) and the matched CoCoNot split (one source, members against non-members)

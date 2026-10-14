@@ -122,7 +122,7 @@ def fig_scale_auc():
     pole), the median, and s_base apart; (b, c) fig_auc's panels: AUC +- s.e. per score on the pooled refusal and compliance
     poles."""
     from matplotlib.lines import Line2D
-    fig = plt.figure(figsize=(TEXTWIDTH, 2.05))                      # 2.05 in (was 3.0): shorter for page space, 
+    fig = plt.figure(figsize=(TEXTWIDTH, 2.05))                      # 2.05 in (was 3.0): shorter for page space
     outer = fig.add_gridspec(1, 2, width_ratios=[1.75, 2], wspace=0.30)
     ina = outer[0].subgridspec(1, 2, wspace=0.06)
     a0 = fig.add_subplot(ina[0]); a0c = fig.add_subplot(ina[1], sharey=a0)
@@ -171,7 +171,7 @@ def fig_scale_auc():
              ha="center", va="top", fontsize=plt.rcParams["axes.labelsize"], color=INK)
     extra = [Line2D([], [], color=MUTED, lw=1.6, alpha=0.6, label="(a) range over scores"), Line2D([], [], color=MUTED, marker="o", ls="", ms=4.5, label="median"),
              Line2D([], [], color=MUTED, marker="o", mfc="white", ls="", ms=4, label=r"$s_{\mathrm{base}}$")]
-    legend_models(fig, extra=extra, y=1.035)                         # legend, titles and x labels closer to the panels 
+    legend_models(fig, extra=extra, y=1.035)                         # legend, titles and x labels closer to the panels
     fig.savefig(FIG / "fig_scale_auc.pdf", bbox_inches="tight"); plt.close(fig)
 
 

@@ -1,5 +1,5 @@
 """Quartiles of the membership score: direction, steering, the factors behind the score, the geometry of the selected
-poles. One dataset at a time; WildGuardMix first , then every set of part 2.
+poles. One dataset at a time; WildGuardMix first, then every set of part 2.
 
 WildGuardMix
   members      pools: every WildGuardMix row of Tülu's SFT mixture on both poles, gold = the mixture's
@@ -180,7 +180,7 @@ def acts_file(model):
 
 
 GPU_CAP_GB = 60      # per-process ceiling for the CUDA allocator: on the Spark's unified memory the cgroup cap does not see GPU
-                     # allocations, and an unbounded process starves the whole machine 
+                     # allocations, and an unbounded process starves the whole machine
 
 
 def gpu_guard():
@@ -655,7 +655,7 @@ def layer_arms():
 
 def dose_scale(model, layer):
     """median ||hidden_states[layer]|| / median ||hidden_states[13]|| over the pool prompts at the last prompt token: the
-    factor that gives the same fraction of the residual norm as the layer-13 doses (norm-matched, choice)."""
+    factor that gives the same fraction of the residual norm as the layer-13 doses (norm-matched)."""
     med = lambda L: float(np.median(np.linalg.norm(load_acts(model, L)[0], axis=1)))
     return med(layer) / med(T.LAYER)
 
@@ -857,8 +857,8 @@ def local_normal(model="tulu_final"):
 
 def steer_logistic(model="tulu_final"):
     """The normal of the logistic boundary between WildGuardMix's refusal and compliance members (boundary(), layer 13,
-    raw units, unit norm, pointing to refusal) steered on the reduced grid as arm 'logistic_normal' ( 
-    can the classifier's normal steer?)."""
+    raw units, unit norm, pointing to refusal) steered on the reduced grid as arm 'logistic_normal':
+    can the classifier's normal steer?"""
     import pandas as pd
     import behaviour as B
     D = with_prompts(pd.read_csv(OUT / "scores.csv"))
@@ -882,7 +882,7 @@ def steer_logistic(model="tulu_final"):
 
 # ---- GPU: the +alpha direction on a general-helpfulness benchmark --------------------
 # XSTest-safe and OR-Bench are both "benign but looks unsafe" and saturate: at |alpha| = 8
-# grid reaches 1.000, so the install-refusal direction has no resolution and the whole top-against-bottom difference had
+# every arm of the grid reaches 1.000, so the install-refusal direction has no resolution and the whole top-against-bottom difference had
 # to be read off HarmBench. helpful_eval.py's set is plainly benign, plainly useful alpaca instructions, decontaminated
 # against the mixture, where refusing is never the right answer and should therefore be hard to induce.
 # All 100 prompts are used, not the grid's first 50: nothing else is steered on this benchmark, so there is no

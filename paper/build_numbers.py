@@ -409,7 +409,7 @@ FLIP_EVALS = ("harmbench", "strongreject", "xstest_safe", "orbench", "alpaca")
 
 def steering():
     """Table tab_steer (selections, controls), tab_steer_ref (reference vectors) and the steering macros, from the per-prompt
-    flip score (selection_steer.py ranges ): range = share of prompts a vector flips to the benchmark's target
+    flip score (selection_steer.py ranges): range = share of prompts a vector flips to the benchmark's target
     label at some dose of the band without the response degenerating (+- bootstrap s.e.); S = mean of the jailbreak half
     (HarmBench, StrongREJECT) and the over-refusal half (XSTest-safe, OR-Bench, Alpaca); Alpaca range; lost = share of prompts that
     never flip cleanly but degenerate (mean over the five); first flip = median lowest clean flip dose (nominal)."""
@@ -709,7 +709,7 @@ def steering_paired():
         put(f"pd-randspread-{mk}", f(P[mm]["random_spread"], 3))
         tb = [A[f"{sc}_top"]["dS"] - A[f"{sc}_bottom"]["dS"] for sc in ("gap", "min-kpp", "consensus", "stwin") if f"{sc}_top" in A and f"{sc}_bottom" in A]
         put(f"pdtb-{mk}-lo", f(min(tb), 3, sign=True)); put(f"pdtb-{mk}-hi", f(max(tb), 3, sign=True))   # top minus bottom selection of the same score, in S
-    # top-128 overlap between scores (selection_steer.py topoverlap )
+    # top-128 overlap between scores (selection_steer.py topoverlap)
     TO = json.load(open(P2 / "results" / "selection_steer" / "top_overlap.json"))
     for mk, mm in (("tulu", "tulu_final"), ("meta", "meta_instruct")):
         for pole in ("refuse", "comply"):

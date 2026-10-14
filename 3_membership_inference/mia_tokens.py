@@ -1,4 +1,4 @@
-"""Which membership score is accurate where the exact text's membership is known , including 's
+"""Which membership score is accurate where the exact text's membership is known, including a
 token-level comparison of the gold answer with the model's own preferred token.
 
     data        matched CoCoNot split (data/matched_split/coconot_chat.json): 398 members (CoCoNot rows verbatim in
@@ -13,7 +13,7 @@ token-level comparison of the gold answer with the model's own preferred token.
                   min-k++       mean of the k = 20 % lowest (log p(gold) - mu) / sigma, mu and sigma the mean and s.d. of
                                 log p over the vocabulary under the model's own distribution (Zhang et al.)
                   gap           mean of log p(gold) - log p(argmax): how far the gold token is from the model's preferred one
-                                (0 when they agree; quantity)
+                                (0 when they agree)
                   min-k gap     mean of the k = 20 % most negative gaps
                   top-1 agree   share of answer tokens where the gold token is the model's top token
                   s (base)      NLL_base - NLL_target;  s (twin) NLL_twin - NLL_SFT;  s behind prefix;  ReCaLL (target, response)

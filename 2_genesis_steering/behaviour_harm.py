@@ -9,7 +9,7 @@ that of the answered ones at the steering site (hidden_states[13], last prompt t
 of a pole if it holds fewer), unit norm - part 2's recipe with behaviour in place of the gold label.
 
 Prompts: WildJailbreak's eval split, `adversarial_harmful` (2,000 rows; Tülu-3 trained on the train split), minus the
-prompts of data/evals, of every part 2 pole and of held-out set, with part 2's length / ASCII filter.
+prompts of data/evals, of every part 2 pole and of the held-out set, with part 2's length / ASCII filter.
 
 Arms steered on part 2's grid (steering.grid_cells, every dose, four benchmarks):
     behav_harm   n_harm
