@@ -1,0 +1,1359 @@
+{
+ "tulu_final": {
+  "scores_in_consensus": [
+   "sft: ReCaLL",
+   "sft: gap (CH)",
+   "sft: loss",
+   "sft: min-k",
+   "sft: min-k gap (CH)",
+   "sft: min-k++",
+   "sft: s (base)",
+   "sft: s (twin)",
+   "sft: top-1 agree (CH)",
+   "sft: zlib"
+  ],
+  "K": 128,
+  "n_pool": {
+   "refuse": 5624,
+   "comply": 4626
+  },
+  "composition": {
+   "all": {
+    "refuse": {
+     "WildGuardMix": 1000,
+     "WildJailbreak": 1000,
+     "CoCoNot": 1000,
+     "CoCoNot, left out": 175,
+     "Do-Not-Answer": 715,
+     "HH-RLHF": 1000,
+     "PKU-SafeRLHF": 734
+    },
+    "comply": {
+     "WildGuardMix": 1000,
+     "WildJailbreak": 1000,
+     "CoCoNot": 471,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 155,
+     "HH-RLHF": 1000,
+     "PKU-SafeRLHF": 1000
+    }
+   },
+   "consensus_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 122,
+     "PKU-SafeRLHF": 6
+    },
+    "comply": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 87,
+     "PKU-SafeRLHF": 41
+    }
+   },
+   "consensus_top": {
+    "refuse": {
+     "WildGuardMix": 36,
+     "WildJailbreak": 65,
+     "CoCoNot": 7,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 20,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 0
+    },
+    "comply": {
+     "WildGuardMix": 75,
+     "WildJailbreak": 51,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 1,
+     "PKU-SafeRLHF": 1
+    }
+   },
+   "gap_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 118,
+     "PKU-SafeRLHF": 10
+    },
+    "comply": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 86,
+     "PKU-SafeRLHF": 42
+    }
+   },
+   "gap_top": {
+    "refuse": {
+     "WildGuardMix": 41,
+     "WildJailbreak": 65,
+     "CoCoNot": 2,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 20,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 0
+    },
+    "comply": {
+     "WildGuardMix": 42,
+     "WildJailbreak": 83,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 2,
+     "PKU-SafeRLHF": 1
+    }
+   },
+   "min-kpp_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 2,
+     "HH-RLHF": 112,
+     "PKU-SafeRLHF": 14
+    },
+    "comply": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 1,
+     "CoCoNot": 4,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 34,
+     "PKU-SafeRLHF": 85
+    }
+   },
+   "min-kpp_top": {
+    "refuse": {
+     "WildGuardMix": 50,
+     "WildJailbreak": 57,
+     "CoCoNot": 3,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 18,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 0
+    },
+    "comply": {
+     "WildGuardMix": 53,
+     "WildJailbreak": 73,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 1,
+     "PKU-SafeRLHF": 1
+    }
+   },
+   "random0": {
+    "refuse": {
+     "WildGuardMix": 22,
+     "WildJailbreak": 18,
+     "CoCoNot": 24,
+     "CoCoNot, left out": 2,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 26,
+     "PKU-SafeRLHF": 15
+    },
+    "comply": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 29,
+     "CoCoNot": 12,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 33,
+     "PKU-SafeRLHF": 27
+    }
+   },
+   "random1": {
+    "refuse": {
+     "WildGuardMix": 20,
+     "WildJailbreak": 21,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 11,
+     "HH-RLHF": 31,
+     "PKU-SafeRLHF": 15
+    },
+    "comply": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 28,
+     "CoCoNot": 18,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 25,
+     "PKU-SafeRLHF": 30
+    }
+   },
+   "random2": {
+    "refuse": {
+     "WildGuardMix": 16,
+     "WildJailbreak": 22,
+     "CoCoNot": 29,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 19,
+     "PKU-SafeRLHF": 18
+    },
+    "comply": {
+     "WildGuardMix": 25,
+     "WildJailbreak": 23,
+     "CoCoNot": 21,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 31,
+     "PKU-SafeRLHF": 25
+    }
+   },
+   "random3": {
+    "refuse": {
+     "WildGuardMix": 21,
+     "WildJailbreak": 26,
+     "CoCoNot": 22,
+     "CoCoNot, left out": 1,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 23,
+     "PKU-SafeRLHF": 14
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 32,
+     "CoCoNot": 9,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 32,
+     "PKU-SafeRLHF": 25
+    }
+   },
+   "random4": {
+    "refuse": {
+     "WildGuardMix": 21,
+     "WildJailbreak": 18,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 13,
+     "HH-RLHF": 15,
+     "PKU-SafeRLHF": 31
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 23,
+     "CoCoNot": 19,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 20,
+     "PKU-SafeRLHF": 36
+    }
+   },
+   "random5": {
+    "refuse": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 28,
+     "CoCoNot": 21,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 15,
+     "HH-RLHF": 21,
+     "PKU-SafeRLHF": 16
+    },
+    "comply": {
+     "WildGuardMix": 28,
+     "WildJailbreak": 33,
+     "CoCoNot": 11,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 24,
+     "PKU-SafeRLHF": 28
+    }
+   },
+   "random6": {
+    "refuse": {
+     "WildGuardMix": 18,
+     "WildJailbreak": 20,
+     "CoCoNot": 29,
+     "CoCoNot, left out": 6,
+     "Do-Not-Answer": 13,
+     "HH-RLHF": 28,
+     "PKU-SafeRLHF": 14
+    },
+    "comply": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 25,
+     "CoCoNot": 20,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 5,
+     "HH-RLHF": 26,
+     "PKU-SafeRLHF": 29
+    }
+   },
+   "random7": {
+    "refuse": {
+     "WildGuardMix": 19,
+     "WildJailbreak": 18,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 23,
+     "HH-RLHF": 21,
+     "PKU-SafeRLHF": 18
+    },
+    "comply": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 22,
+     "CoCoNot": 20,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 30,
+     "PKU-SafeRLHF": 29
+    }
+   },
+   "random8": {
+    "refuse": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 20,
+     "CoCoNot": 37,
+     "CoCoNot, left out": 2,
+     "Do-Not-Answer": 11,
+     "HH-RLHF": 19,
+     "PKU-SafeRLHF": 16
+    },
+    "comply": {
+     "WildGuardMix": 28,
+     "WildJailbreak": 37,
+     "CoCoNot": 16,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 2,
+     "HH-RLHF": 22,
+     "PKU-SafeRLHF": 23
+    }
+   },
+   "random9": {
+    "refuse": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 20,
+     "CoCoNot": 12,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 20,
+     "HH-RLHF": 28,
+     "PKU-SafeRLHF": 21
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 22,
+     "CoCoNot": 6,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 39,
+     "PKU-SafeRLHF": 31
+    }
+   },
+   "stwin_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 104,
+     "PKU-SafeRLHF": 24
+    },
+    "comply": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 0,
+     "CoCoNot": 1,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 77,
+     "PKU-SafeRLHF": 50
+    }
+   },
+   "stwin_top": {
+    "refuse": {
+     "WildGuardMix": 42,
+     "WildJailbreak": 42,
+     "CoCoNot": 19,
+     "CoCoNot, left out": 1,
+     "Do-Not-Answer": 24,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 0
+    },
+    "comply": {
+     "WildGuardMix": 107,
+     "WildJailbreak": 21,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 0
+    }
+   }
+  },
+  "member_share": {
+   "all": {
+    "refuse": 0.5334281650071123,
+    "comply": 0.43233895373973197
+   },
+   "consensus_bottom": {
+    "refuse": 0.0,
+    "comply": 0.0
+   },
+   "consensus_top": {
+    "refuse": 0.84375,
+    "comply": 0.984375
+   },
+   "gap_bottom": {
+    "refuse": 0.0,
+    "comply": 0.0
+   },
+   "gap_top": {
+    "refuse": 0.84375,
+    "comply": 0.9765625
+   },
+   "min-kpp_bottom": {
+    "refuse": 0.0,
+    "comply": 0.0078125
+   },
+   "min-kpp_top": {
+    "refuse": 0.859375,
+    "comply": 0.984375
+   },
+   "random0": {
+    "refuse": 0.5,
+    "comply": 0.4140625
+   },
+   "random1": {
+    "refuse": 0.5234375,
+    "comply": 0.40625
+   },
+   "random2": {
+    "refuse": 0.5234375,
+    "comply": 0.375
+   },
+   "random3": {
+    "refuse": 0.5390625,
+    "comply": 0.4609375
+   },
+   "random4": {
+    "refuse": 0.5078125,
+    "comply": 0.390625
+   },
+   "random5": {
+    "refuse": 0.5625,
+    "comply": 0.4765625
+   },
+   "random6": {
+    "refuse": 0.5234375,
+    "comply": 0.375
+   },
+   "random7": {
+    "refuse": 0.4921875,
+    "comply": 0.3515625
+   },
+   "random8": {
+    "refuse": 0.625,
+    "comply": 0.5078125
+   },
+   "random9": {
+    "refuse": 0.4375,
+    "comply": 0.3828125
+   },
+   "stwin_bottom": {
+    "refuse": 0.0,
+    "comply": 0.0
+   },
+   "stwin_top": {
+    "refuse": 0.8046875,
+    "comply": 1.0
+   }
+  },
+  "cos_to_all": {
+   "all": 1.0,
+   "consensus_bottom": 0.9128686189651489,
+   "consensus_top": 0.8144717812538147,
+   "gap_bottom": 0.9304453730583191,
+   "gap_top": 0.8814840912818909,
+   "min-kpp_bottom": 0.9014716148376465,
+   "min-kpp_top": 0.8702118992805481,
+   "random0": 0.9885425567626953,
+   "random1": 0.9864490032196045,
+   "random2": 0.9886922240257263,
+   "random3": 0.9857093691825867,
+   "random4": 0.9891324043273926,
+   "random5": 0.9899985790252686,
+   "random6": 0.9846659898757935,
+   "random7": 0.9783543944358826,
+   "random8": 0.9884591102600098,
+   "random9": 0.9898239374160767,
+   "stwin_bottom": 0.8942641019821167,
+   "stwin_top": 0.8570640683174133
+  },
+  "dprime": {
+   "all": 2.5436713695526123,
+   "consensus_bottom": 2.5286643505096436,
+   "consensus_top": 4.246235370635986,
+   "gap_bottom": 2.491875410079956,
+   "gap_top": 4.094869613647461,
+   "min-kpp_bottom": 2.1349384784698486,
+   "min-kpp_top": 3.6962344646453857,
+   "random0": 2.461916208267212,
+   "random1": 2.6227188110351562,
+   "random2": 2.6354823112487793,
+   "random3": 2.841346263885498,
+   "random4": 2.652740478515625,
+   "random5": 2.5345747470855713,
+   "random6": 2.719879388809204,
+   "random7": 2.442716121673584,
+   "random8": 2.598001003265381,
+   "random9": 2.484490156173706,
+   "stwin_bottom": 2.0000691413879395,
+   "stwin_top": 3.3050098419189453
+  },
+  "cos_to_dataset_vectors": {
+   "all": {
+    "g_coconot_safety": 0.9014201164245605,
+    "g_wildjailbreak": 0.9589167237281799,
+    "g_wildguardmix": 0.9071931838989258,
+    "x_coconot_leftover": 0.923870861530304,
+    "x_donotanswer": 0.6968947052955627,
+    "x_hh_rlhf": 0.9093796014785767,
+    "x_pku_saferlhf": 0.841448187828064
+   },
+   "consensus_bottom": {
+    "g_coconot_safety": 0.792280912399292,
+    "g_wildjailbreak": 0.7980075478553772,
+    "g_wildguardmix": 0.7836907505989075,
+    "x_coconot_leftover": 0.80003422498703,
+    "x_donotanswer": 0.672437846660614,
+    "x_hh_rlhf": 0.9313006401062012,
+    "x_pku_saferlhf": 0.7953763008117676
+   },
+   "consensus_top": {
+    "g_coconot_safety": 0.6370213031768799,
+    "g_wildjailbreak": 0.8583370447158813,
+    "g_wildguardmix": 0.8520196676254272,
+    "x_coconot_leftover": 0.7249311208724976,
+    "x_donotanswer": 0.5470625162124634,
+    "x_hh_rlhf": 0.7608569264411926,
+    "x_pku_saferlhf": 0.5144167542457581
+   },
+   "gap_bottom": {
+    "g_coconot_safety": 0.8008329272270203,
+    "g_wildjailbreak": 0.827614963054657,
+    "g_wildguardmix": 0.8064920902252197,
+    "x_coconot_leftover": 0.8108709454536438,
+    "x_donotanswer": 0.6850767731666565,
+    "x_hh_rlhf": 0.9517792463302612,
+    "x_pku_saferlhf": 0.8018432855606079
+   },
+   "gap_top": {
+    "g_coconot_safety": 0.7334377765655518,
+    "g_wildjailbreak": 0.916224479675293,
+    "g_wildguardmix": 0.8679912090301514,
+    "x_coconot_leftover": 0.8114138245582581,
+    "x_donotanswer": 0.5968071818351746,
+    "x_hh_rlhf": 0.8163933753967285,
+    "x_pku_saferlhf": 0.625062108039856
+   },
+   "min-kpp_bottom": {
+    "g_coconot_safety": 0.799214780330658,
+    "g_wildjailbreak": 0.7921303510665894,
+    "g_wildguardmix": 0.7656110525131226,
+    "x_coconot_leftover": 0.8006083965301514,
+    "x_donotanswer": 0.7375408411026001,
+    "x_hh_rlhf": 0.8802145719528198,
+    "x_pku_saferlhf": 0.8460887670516968
+   },
+   "min-kpp_top": {
+    "g_coconot_safety": 0.7062875032424927,
+    "g_wildjailbreak": 0.9109216928482056,
+    "g_wildguardmix": 0.879278838634491,
+    "x_coconot_leftover": 0.7907017469406128,
+    "x_donotanswer": 0.5964494347572327,
+    "x_hh_rlhf": 0.8007184863090515,
+    "x_pku_saferlhf": 0.6032256484031677
+   },
+   "random0": {
+    "g_coconot_safety": 0.9035549759864807,
+    "g_wildjailbreak": 0.9476993083953857,
+    "g_wildguardmix": 0.8757879137992859,
+    "x_coconot_leftover": 0.9173431992530823,
+    "x_donotanswer": 0.6838092803955078,
+    "x_hh_rlhf": 0.9001233577728271,
+    "x_pku_saferlhf": 0.8414691686630249
+   },
+   "random1": {
+    "g_coconot_safety": 0.8830585479736328,
+    "g_wildjailbreak": 0.9406858682632446,
+    "g_wildguardmix": 0.8890700340270996,
+    "x_coconot_leftover": 0.8999254703521729,
+    "x_donotanswer": 0.7097283005714417,
+    "x_hh_rlhf": 0.8920865058898926,
+    "x_pku_saferlhf": 0.8656806349754333
+   },
+   "random2": {
+    "g_coconot_safety": 0.9074441194534302,
+    "g_wildjailbreak": 0.9410737752914429,
+    "g_wildguardmix": 0.8866298198699951,
+    "x_coconot_leftover": 0.9161020517349243,
+    "x_donotanswer": 0.6782032251358032,
+    "x_hh_rlhf": 0.9015701413154602,
+    "x_pku_saferlhf": 0.8276932239532471
+   },
+   "random3": {
+    "g_coconot_safety": 0.8681111335754395,
+    "g_wildjailbreak": 0.9591075778007507,
+    "g_wildguardmix": 0.9074311256408691,
+    "x_coconot_leftover": 0.8979846835136414,
+    "x_donotanswer": 0.7085642218589783,
+    "x_hh_rlhf": 0.9097959995269775,
+    "x_pku_saferlhf": 0.8167194724082947
+   },
+   "random4": {
+    "g_coconot_safety": 0.9019631743431091,
+    "g_wildjailbreak": 0.9505901336669922,
+    "g_wildguardmix": 0.8920171856880188,
+    "x_coconot_leftover": 0.9247009754180908,
+    "x_donotanswer": 0.7007344365119934,
+    "x_hh_rlhf": 0.8836150765419006,
+    "x_pku_saferlhf": 0.8494945168495178
+   },
+   "random5": {
+    "g_coconot_safety": 0.906657874584198,
+    "g_wildjailbreak": 0.9463472366333008,
+    "g_wildguardmix": 0.8895589709281921,
+    "x_coconot_leftover": 0.9290810823440552,
+    "x_donotanswer": 0.6652508974075317,
+    "x_hh_rlhf": 0.8880477547645569,
+    "x_pku_saferlhf": 0.8534411191940308
+   },
+   "random6": {
+    "g_coconot_safety": 0.8969462513923645,
+    "g_wildjailbreak": 0.9363568425178528,
+    "g_wildguardmix": 0.8821540474891663,
+    "x_coconot_leftover": 0.9225059747695923,
+    "x_donotanswer": 0.6620578765869141,
+    "x_hh_rlhf": 0.9024544954299927,
+    "x_pku_saferlhf": 0.8359901309013367
+   },
+   "random7": {
+    "g_coconot_safety": 0.9222546219825745,
+    "g_wildjailbreak": 0.9223233461380005,
+    "g_wildguardmix": 0.853537380695343,
+    "x_coconot_leftover": 0.9269178509712219,
+    "x_donotanswer": 0.669037401676178,
+    "x_hh_rlhf": 0.8602184653282166,
+    "x_pku_saferlhf": 0.8697035312652588
+   },
+   "random8": {
+    "g_coconot_safety": 0.9065249562263489,
+    "g_wildjailbreak": 0.9609238505363464,
+    "g_wildguardmix": 0.8998081088066101,
+    "x_coconot_leftover": 0.9306532144546509,
+    "x_donotanswer": 0.6482945084571838,
+    "x_hh_rlhf": 0.8866787552833557,
+    "x_pku_saferlhf": 0.8149161338806152
+   },
+   "random9": {
+    "g_coconot_safety": 0.8958040475845337,
+    "g_wildjailbreak": 0.9458486437797546,
+    "g_wildguardmix": 0.8807032108306885,
+    "x_coconot_leftover": 0.9154646992683411,
+    "x_donotanswer": 0.6880021691322327,
+    "x_hh_rlhf": 0.9121919274330139,
+    "x_pku_saferlhf": 0.8441108465194702
+   },
+   "stwin_bottom": {
+    "g_coconot_safety": 0.7557182908058167,
+    "g_wildjailbreak": 0.78176349401474,
+    "g_wildguardmix": 0.7967777848243713,
+    "x_coconot_leftover": 0.7523382306098938,
+    "x_donotanswer": 0.7004103660583496,
+    "x_hh_rlhf": 0.9158127307891846,
+    "x_pku_saferlhf": 0.7578648328781128
+   },
+   "stwin_top": {
+    "g_coconot_safety": 0.6577160954475403,
+    "g_wildjailbreak": 0.8262441754341125,
+    "g_wildguardmix": 0.9037348628044128,
+    "x_coconot_leftover": 0.7019252181053162,
+    "x_donotanswer": 0.5643740892410278,
+    "x_hh_rlhf": 0.7994440793991089,
+    "x_pku_saferlhf": 0.6152999401092529
+   }
+  },
+  "norm": {
+   "all": 4.384860992431641,
+   "consensus_bottom": 4.653056621551514,
+   "consensus_top": 5.065045356750488,
+   "gap_bottom": 4.547906875610352,
+   "gap_top": 5.231595039367676,
+   "min-kpp_bottom": 4.001682281494141,
+   "min-kpp_top": 4.914899826049805,
+   "random0": 4.339387893676758,
+   "random1": 4.496170997619629,
+   "random2": 4.534930229187012,
+   "random3": 4.817716598510742,
+   "random4": 4.472322940826416,
+   "random5": 4.375284671783447,
+   "random6": 4.615821361541748,
+   "random7": 4.366703987121582,
+   "random8": 4.454904556274414,
+   "random9": 4.40248441696167,
+   "stwin_bottom": 4.2749481201171875,
+   "stwin_top": 4.879940986633301
+  }
+ },
+ "meta_instruct": {
+  "scores_in_consensus": [
+   "meta: ReCaLL",
+   "meta: gap (CH)",
+   "meta: loss",
+   "meta: min-k",
+   "meta: min-k gap (CH)",
+   "meta: min-k++",
+   "meta: s (base)",
+   "meta: top-1 agree (CH)",
+   "meta: zlib"
+  ],
+  "K": 128,
+  "n_pool": {
+   "refuse": 5624,
+   "comply": 4626
+  },
+  "composition": {
+   "all": {
+    "refuse": {
+     "WildGuardMix": 1000,
+     "WildJailbreak": 1000,
+     "CoCoNot": 1000,
+     "CoCoNot, left out": 175,
+     "Do-Not-Answer": 715,
+     "HH-RLHF": 1000,
+     "PKU-SafeRLHF": 734
+    },
+    "comply": {
+     "WildGuardMix": 1000,
+     "WildJailbreak": 1000,
+     "CoCoNot": 471,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 155,
+     "HH-RLHF": 1000,
+     "PKU-SafeRLHF": 1000
+    }
+   },
+   "consensus_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 1,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 123,
+     "PKU-SafeRLHF": 4
+    },
+    "comply": {
+     "WildGuardMix": 3,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 120,
+     "PKU-SafeRLHF": 5
+    }
+   },
+   "consensus_top": {
+    "refuse": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 39,
+     "CoCoNot": 61,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 1,
+     "HH-RLHF": 1,
+     "PKU-SafeRLHF": 2
+    },
+    "comply": {
+     "WildGuardMix": 25,
+     "WildJailbreak": 70,
+     "CoCoNot": 32,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 1
+    }
+   },
+   "gap_bottom": {
+    "refuse": {
+     "WildGuardMix": 0,
+     "WildJailbreak": 1,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 122,
+     "PKU-SafeRLHF": 5
+    },
+    "comply": {
+     "WildGuardMix": 3,
+     "WildJailbreak": 0,
+     "CoCoNot": 0,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 115,
+     "PKU-SafeRLHF": 10
+    }
+   },
+   "gap_top": {
+    "refuse": {
+     "WildGuardMix": 18,
+     "WildJailbreak": 70,
+     "CoCoNot": 30,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 3,
+     "PKU-SafeRLHF": 3
+    },
+    "comply": {
+     "WildGuardMix": 17,
+     "WildJailbreak": 99,
+     "CoCoNot": 10,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 0,
+     "PKU-SafeRLHF": 2
+    }
+   },
+   "min-kpp_bottom": {
+    "refuse": {
+     "WildGuardMix": 3,
+     "WildJailbreak": 17,
+     "CoCoNot": 1,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 55,
+     "HH-RLHF": 41,
+     "PKU-SafeRLHF": 11
+    },
+    "comply": {
+     "WildGuardMix": 7,
+     "WildJailbreak": 2,
+     "CoCoNot": 4,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 6,
+     "HH-RLHF": 67,
+     "PKU-SafeRLHF": 42
+    }
+   },
+   "min-kpp_top": {
+    "refuse": {
+     "WildGuardMix": 45,
+     "WildJailbreak": 29,
+     "CoCoNot": 41,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 0,
+     "HH-RLHF": 3,
+     "PKU-SafeRLHF": 10
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 74,
+     "CoCoNot": 5,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 1,
+     "HH-RLHF": 8,
+     "PKU-SafeRLHF": 13
+    }
+   },
+   "random0": {
+    "refuse": {
+     "WildGuardMix": 22,
+     "WildJailbreak": 18,
+     "CoCoNot": 24,
+     "CoCoNot, left out": 2,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 26,
+     "PKU-SafeRLHF": 15
+    },
+    "comply": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 29,
+     "CoCoNot": 12,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 33,
+     "PKU-SafeRLHF": 27
+    }
+   },
+   "random1": {
+    "refuse": {
+     "WildGuardMix": 20,
+     "WildJailbreak": 21,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 11,
+     "HH-RLHF": 31,
+     "PKU-SafeRLHF": 15
+    },
+    "comply": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 28,
+     "CoCoNot": 18,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 25,
+     "PKU-SafeRLHF": 30
+    }
+   },
+   "random2": {
+    "refuse": {
+     "WildGuardMix": 16,
+     "WildJailbreak": 22,
+     "CoCoNot": 29,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 19,
+     "PKU-SafeRLHF": 18
+    },
+    "comply": {
+     "WildGuardMix": 25,
+     "WildJailbreak": 23,
+     "CoCoNot": 21,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 31,
+     "PKU-SafeRLHF": 25
+    }
+   },
+   "random3": {
+    "refuse": {
+     "WildGuardMix": 21,
+     "WildJailbreak": 26,
+     "CoCoNot": 22,
+     "CoCoNot, left out": 1,
+     "Do-Not-Answer": 21,
+     "HH-RLHF": 23,
+     "PKU-SafeRLHF": 14
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 32,
+     "CoCoNot": 9,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 32,
+     "PKU-SafeRLHF": 25
+    }
+   },
+   "random4": {
+    "refuse": {
+     "WildGuardMix": 21,
+     "WildJailbreak": 18,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 13,
+     "HH-RLHF": 15,
+     "PKU-SafeRLHF": 31
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 23,
+     "CoCoNot": 19,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 20,
+     "PKU-SafeRLHF": 36
+    }
+   },
+   "random5": {
+    "refuse": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 28,
+     "CoCoNot": 21,
+     "CoCoNot, left out": 4,
+     "Do-Not-Answer": 15,
+     "HH-RLHF": 21,
+     "PKU-SafeRLHF": 16
+    },
+    "comply": {
+     "WildGuardMix": 28,
+     "WildJailbreak": 33,
+     "CoCoNot": 11,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 24,
+     "PKU-SafeRLHF": 28
+    }
+   },
+   "random6": {
+    "refuse": {
+     "WildGuardMix": 18,
+     "WildJailbreak": 20,
+     "CoCoNot": 29,
+     "CoCoNot, left out": 6,
+     "Do-Not-Answer": 13,
+     "HH-RLHF": 28,
+     "PKU-SafeRLHF": 14
+    },
+    "comply": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 25,
+     "CoCoNot": 20,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 5,
+     "HH-RLHF": 26,
+     "PKU-SafeRLHF": 29
+    }
+   },
+   "random7": {
+    "refuse": {
+     "WildGuardMix": 19,
+     "WildJailbreak": 18,
+     "CoCoNot": 26,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 23,
+     "HH-RLHF": 21,
+     "PKU-SafeRLHF": 18
+    },
+    "comply": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 22,
+     "CoCoNot": 20,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 4,
+     "HH-RLHF": 30,
+     "PKU-SafeRLHF": 29
+    }
+   },
+   "random8": {
+    "refuse": {
+     "WildGuardMix": 23,
+     "WildJailbreak": 20,
+     "CoCoNot": 37,
+     "CoCoNot, left out": 2,
+     "Do-Not-Answer": 11,
+     "HH-RLHF": 19,
+     "PKU-SafeRLHF": 16
+    },
+    "comply": {
+     "WildGuardMix": 28,
+     "WildJailbreak": 37,
+     "CoCoNot": 16,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 2,
+     "HH-RLHF": 22,
+     "PKU-SafeRLHF": 23
+    }
+   },
+   "random9": {
+    "refuse": {
+     "WildGuardMix": 24,
+     "WildJailbreak": 20,
+     "CoCoNot": 12,
+     "CoCoNot, left out": 3,
+     "Do-Not-Answer": 20,
+     "HH-RLHF": 28,
+     "PKU-SafeRLHF": 21
+    },
+    "comply": {
+     "WildGuardMix": 27,
+     "WildJailbreak": 22,
+     "CoCoNot": 6,
+     "CoCoNot, left out": 0,
+     "Do-Not-Answer": 3,
+     "HH-RLHF": 39,
+     "PKU-SafeRLHF": 31
+    }
+   }
+  },
+  "member_share": {
+   "all": {
+    "refuse": 0.5334281650071123,
+    "comply": 0.43233895373973197
+   },
+   "consensus_bottom": {
+    "refuse": 0.0078125,
+    "comply": 0.0234375
+   },
+   "consensus_top": {
+    "refuse": 0.96875,
+    "comply": 0.7421875
+   },
+   "gap_bottom": {
+    "refuse": 0.0078125,
+    "comply": 0.0234375
+   },
+   "gap_top": {
+    "refuse": 0.921875,
+    "comply": 0.90625
+   },
+   "min-kpp_bottom": {
+    "refuse": 0.1640625,
+    "comply": 0.0703125
+   },
+   "min-kpp_top": {
+    "refuse": 0.8984375,
+    "comply": 0.7890625
+   },
+   "random0": {
+    "refuse": 0.5,
+    "comply": 0.4140625
+   },
+   "random1": {
+    "refuse": 0.5234375,
+    "comply": 0.40625
+   },
+   "random2": {
+    "refuse": 0.5234375,
+    "comply": 0.375
+   },
+   "random3": {
+    "refuse": 0.5390625,
+    "comply": 0.4609375
+   },
+   "random4": {
+    "refuse": 0.5078125,
+    "comply": 0.390625
+   },
+   "random5": {
+    "refuse": 0.5625,
+    "comply": 0.4765625
+   },
+   "random6": {
+    "refuse": 0.5234375,
+    "comply": 0.375
+   },
+   "random7": {
+    "refuse": 0.4921875,
+    "comply": 0.3515625
+   },
+   "random8": {
+    "refuse": 0.625,
+    "comply": 0.5078125
+   },
+   "random9": {
+    "refuse": 0.4375,
+    "comply": 0.3828125
+   }
+  },
+  "cos_to_all": {
+   "all": 1.0,
+   "consensus_bottom": 0.8930486440658569,
+   "consensus_top": 0.8220897316932678,
+   "gap_bottom": 0.893308699131012,
+   "gap_top": 0.8578795194625854,
+   "min-kpp_bottom": 0.9179639220237732,
+   "min-kpp_top": 0.6463305354118347,
+   "random0": 0.9873250722885132,
+   "random1": 0.9858673214912415,
+   "random2": 0.9872778058052063,
+   "random3": 0.9827114343643188,
+   "random4": 0.9878572225570679,
+   "random5": 0.9876272082328796,
+   "random6": 0.9814311861991882,
+   "random7": 0.9719460010528564,
+   "random8": 0.9852935075759888,
+   "random9": 0.9888319969177246
+  },
+  "dprime": {
+   "all": 2.1207828521728516,
+   "consensus_bottom": 4.311717510223389,
+   "consensus_top": 3.3798446655273438,
+   "gap_bottom": 3.1769187450408936,
+   "gap_top": 2.8186910152435303,
+   "min-kpp_bottom": 2.3200087547302246,
+   "min-kpp_top": 2.286174774169922,
+   "random0": 2.063877820968628,
+   "random1": 2.296189785003662,
+   "random2": 2.247788429260254,
+   "random3": 2.4270286560058594,
+   "random4": 2.200349807739258,
+   "random5": 2.092495918273926,
+   "random6": 2.3055026531219482,
+   "random7": 2.122621536254883,
+   "random8": 2.084719657897949,
+   "random9": 2.141378879547119
+  },
+  "cos_to_dataset_vectors": {
+   "all": {
+    "g_coconot_safety": 0.8995643854141235,
+    "g_wildjailbreak": 0.9486674070358276,
+    "g_wildguardmix": 0.8878318667411804,
+    "x_coconot_leftover": 0.9482987523078918,
+    "x_donotanswer": 0.7641461491584778,
+    "x_hh_rlhf": 0.9181727766990662,
+    "x_pku_saferlhf": 0.8387126922607422
+   },
+   "consensus_bottom": {
+    "g_coconot_safety": 0.709476888179779,
+    "g_wildjailbreak": 0.8044029474258423,
+    "g_wildguardmix": 0.8030439019203186,
+    "x_coconot_leftover": 0.7910462021827698,
+    "x_donotanswer": 0.7284159660339355,
+    "x_hh_rlhf": 0.9594066143035889,
+    "x_pku_saferlhf": 0.7108610272407532
+   },
+   "consensus_top": {
+    "g_coconot_safety": 0.8126429915428162,
+    "g_wildjailbreak": 0.8686667680740356,
+    "g_wildguardmix": 0.7762740850448608,
+    "x_coconot_leftover": 0.8045506477355957,
+    "x_donotanswer": 0.5068610906600952,
+    "x_hh_rlhf": 0.6611101031303406,
+    "x_pku_saferlhf": 0.5587002635002136
+   },
+   "gap_bottom": {
+    "g_coconot_safety": 0.701735258102417,
+    "g_wildjailbreak": 0.801263689994812,
+    "g_wildguardmix": 0.8087055683135986,
+    "x_coconot_leftover": 0.785351037979126,
+    "x_donotanswer": 0.726720929145813,
+    "x_hh_rlhf": 0.9625084400177002,
+    "x_pku_saferlhf": 0.7067981958389282
+   },
+   "gap_top": {
+    "g_coconot_safety": 0.802562415599823,
+    "g_wildjailbreak": 0.8958662152290344,
+    "g_wildguardmix": 0.803362250328064,
+    "x_coconot_leftover": 0.812194287776947,
+    "x_donotanswer": 0.5732385516166687,
+    "x_hh_rlhf": 0.7380679845809937,
+    "x_pku_saferlhf": 0.6031876802444458
+   },
+   "min-kpp_bottom": {
+    "g_coconot_safety": 0.7250941395759583,
+    "g_wildjailbreak": 0.8596564531326294,
+    "g_wildguardmix": 0.8401592969894409,
+    "x_coconot_leftover": 0.8207006454467773,
+    "x_donotanswer": 0.7716293931007385,
+    "x_hh_rlhf": 0.9351531267166138,
+    "x_pku_saferlhf": 0.7495781183242798
+   },
+   "min-kpp_top": {
+    "g_coconot_safety": 0.5974185466766357,
+    "g_wildjailbreak": 0.7596144080162048,
+    "g_wildguardmix": 0.6404192447662354,
+    "x_coconot_leftover": 0.639564573764801,
+    "x_donotanswer": 0.455678790807724,
+    "x_hh_rlhf": 0.4876626431941986,
+    "x_pku_saferlhf": 0.4009525179862976
+   },
+   "random0": {
+    "g_coconot_safety": 0.892678439617157,
+    "g_wildjailbreak": 0.9400661587715149,
+    "g_wildguardmix": 0.866454005241394,
+    "x_coconot_leftover": 0.9374298453330994,
+    "x_donotanswer": 0.7442236542701721,
+    "x_hh_rlhf": 0.9111918210983276,
+    "x_pku_saferlhf": 0.8233158588409424
+   },
+   "random1": {
+    "g_coconot_safety": 0.884017825126648,
+    "g_wildjailbreak": 0.9239905476570129,
+    "g_wildguardmix": 0.8736711144447327,
+    "x_coconot_leftover": 0.9278941750526428,
+    "x_donotanswer": 0.7720591425895691,
+    "x_hh_rlhf": 0.900801420211792,
+    "x_pku_saferlhf": 0.852774441242218
+   },
+   "random2": {
+    "g_coconot_safety": 0.90987229347229,
+    "g_wildjailbreak": 0.9291893839836121,
+    "g_wildguardmix": 0.8689150214195251,
+    "x_coconot_leftover": 0.9380015730857849,
+    "x_donotanswer": 0.7316047549247742,
+    "x_hh_rlhf": 0.9076157212257385,
+    "x_pku_saferlhf": 0.8220522403717041
+   },
+   "random3": {
+    "g_coconot_safety": 0.8657591342926025,
+    "g_wildjailbreak": 0.9524279236793518,
+    "g_wildguardmix": 0.882159948348999,
+    "x_coconot_leftover": 0.9244012832641602,
+    "x_donotanswer": 0.7661054730415344,
+    "x_hh_rlhf": 0.9171369075775146,
+    "x_pku_saferlhf": 0.8026177883148193
+   },
+   "random4": {
+    "g_coconot_safety": 0.8993816375732422,
+    "g_wildjailbreak": 0.9379551410675049,
+    "g_wildguardmix": 0.8780261874198914,
+    "x_coconot_leftover": 0.9459202885627747,
+    "x_donotanswer": 0.7479329109191895,
+    "x_hh_rlhf": 0.8969907760620117,
+    "x_pku_saferlhf": 0.8368208408355713
+   },
+   "random5": {
+    "g_coconot_safety": 0.8953672051429749,
+    "g_wildjailbreak": 0.9290550351142883,
+    "g_wildguardmix": 0.8613476753234863,
+    "x_coconot_leftover": 0.9482375979423523,
+    "x_donotanswer": 0.7499811053276062,
+    "x_hh_rlhf": 0.9041739702224731,
+    "x_pku_saferlhf": 0.8496666550636292
+   },
+   "random6": {
+    "g_coconot_safety": 0.8937382698059082,
+    "g_wildjailbreak": 0.9169250726699829,
+    "g_wildguardmix": 0.8552063703536987,
+    "x_coconot_leftover": 0.9430409073829651,
+    "x_donotanswer": 0.7239606976509094,
+    "x_hh_rlhf": 0.9132067561149597,
+    "x_pku_saferlhf": 0.8315683603286743
+   },
+   "random7": {
+    "g_coconot_safety": 0.9121060371398926,
+    "g_wildjailbreak": 0.887952446937561,
+    "g_wildguardmix": 0.8115860223770142,
+    "x_coconot_leftover": 0.9353771209716797,
+    "x_donotanswer": 0.7478118538856506,
+    "x_hh_rlhf": 0.8810097575187683,
+    "x_pku_saferlhf": 0.8892355561256409
+   },
+   "random8": {
+    "g_coconot_safety": 0.9055408239364624,
+    "g_wildjailbreak": 0.9498578906059265,
+    "g_wildguardmix": 0.8742989897727966,
+    "x_coconot_leftover": 0.9465459585189819,
+    "x_donotanswer": 0.7155392169952393,
+    "x_hh_rlhf": 0.8969913721084595,
+    "x_pku_saferlhf": 0.8130247592926025
+   },
+   "random9": {
+    "g_coconot_safety": 0.8939392566680908,
+    "g_wildjailbreak": 0.9366998672485352,
+    "g_wildguardmix": 0.8632832169532776,
+    "x_coconot_leftover": 0.9383552670478821,
+    "x_donotanswer": 0.7475520372390747,
+    "x_hh_rlhf": 0.9163851737976074,
+    "x_pku_saferlhf": 0.8289226293563843
+   }
+  },
+  "norm": {
+   "all": 3.590982675552368,
+   "consensus_bottom": 5.420064926147461,
+   "consensus_top": 3.8835325241088867,
+   "gap_bottom": 4.695424556732178,
+   "gap_top": 3.703875780105591,
+   "min-kpp_bottom": 4.361871719360352,
+   "min-kpp_top": 2.946326732635498,
+   "random0": 3.5231997966766357,
+   "random1": 3.8162240982055664,
+   "random2": 3.7020351886749268,
+   "random3": 4.0120744705200195,
+   "random4": 3.610809564590454,
+   "random5": 3.547752857208252,
+   "random6": 3.774196147918701,
+   "random7": 3.616307020187378,
+   "random8": 3.4791574478149414,
+   "random9": 3.6352107524871826
+  }
+ }
+}

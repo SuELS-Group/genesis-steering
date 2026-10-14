@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+
+# LaTeX build output
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.pdf
+!paper/arxiv/*.pdf
+!paper/figures/*.pdf
+
+# rebuilt from public sources, never committed (see README)
+1_models_and_datasets/data/
+2_genesis_steering/data/
+3_membership_inference/data/*
+!3_membership_inference/data/mia_quartile/
+
+# model generations for harmful prompts and the judge files that repeat them
+**/completions*.jsonl
+**/judge.jsonl
+**/judge_agreement/

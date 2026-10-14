@@ -1,0 +1,12 @@
+{
+ "fx-alpaca-degen": "7.5",
+ "fx-alpaca-flip": "5.5",
+ "fx-harmbench-degen": "8",
+ "fx-harmbench-flip": "7.5",
+ "fx-orbench-degen": "7.5",
+ "fx-orbench-flip": "1.5",
+ "fx-strongreject-degen": "9",
+ "fx-strongreject-flip": "3.5",
+ "fx-xstestsafe-degen": "7",
+ "fx-xstestsafe-flip": "3"
+}

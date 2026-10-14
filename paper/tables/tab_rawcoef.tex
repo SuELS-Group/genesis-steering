@@ -1,0 +1,59 @@
+\multicolumn{6}{@{}l}{\emph{T\"ulu-3-8B}}\\
+Gap, top 128 & 5.232 & 5 & 3 & 1.300 & 0.780 \\
+Gap, bottom 128 & 4.548 & 6 & 3 & 1.794 & 0.897 \\
+Min-K\%++, top 128 & 4.915 & 5 & 3 & 1.383 & 0.830 \\
+Min-K\%++, bottom 128 & 4.002 & 6 & 3 & 2.039 & 1.019 \\
+consensus, top 128 & 5.065 & 6 & 3 & 1.611 & 0.805 \\
+consensus, bottom 128 & 4.653 & 5 & 3 & 1.461 & 0.877 \\
+$s_{\text{twin}}$, top 128 & 4.880 & 5 & 3 & 1.393 & 0.836 \\
+$s_{\text{twin}}$, bottom 128 & 4.275 & 5 & 3 & 1.590 & 0.954 \\
+random draw 1 & 4.339 & 5 & 3 & 1.567 & 0.940 \\
+random draw 2 & 4.496 & 5 & 3 & 1.512 & 0.907 \\
+random draw 3 & 4.535 & 5 & 3 & 1.499 & 0.900 \\
+random draw 4 & 4.818 & 5 & 3 & 1.411 & 0.847 \\
+random draw 5 & 4.472 & 5 & 3 & 1.520 & 0.912 \\
+random draw 6 & 4.375 & 5 & 3 & 1.554 & 0.932 \\
+random draw 7 & 4.616 & 5 & 3 & 1.473 & 0.884 \\
+random draw 8 & 4.367 & 5.5 & 3 & 1.713 & 0.934 \\
+random draw 9 & 4.455 & 5 & 3 & 1.526 & 0.916 \\
+random draw 10 & 4.402 & 5 & 3 & 1.544 & 0.927 \\
+whole pool & 4.385 & 5 & 3 & 1.551 & 0.930 \\
+WildGuardMix$^\dagger$ & 4.790 & 5 & 3 & 1.420 & 0.852 \\
+WildJailbreak$^\dagger$ & 5.896 & 5 & 3 & 1.153 & 0.692 \\
+CoCoNot$^\dagger$ & 5.255 & 5 & 3 & 1.294 & 0.776 \\
+CoCoNot, left out & 5.918 & 6 & 3 & 1.379 & 0.689 \\
+Do-Not-Answer & 2.829 & 5 & 3 & 2.403 & 1.442 \\
+HH-RLHF & 5.124 & 5 & 3 & 1.327 & 0.796 \\
+PKU-SafeRLHF & 3.395 & 6 & 3 & 2.403 & 1.202 \\
+CoCoNot, both poles from T\"ulu's mixture & 4.112 & 6 & 4 & 1.984 & 1.323 \\
+CAA, letter token & 3.307 & 2 & 5.5 & 0.822 & 2.262 \\
+CAA, answer mean & 2.769 & 5 & 5 & 2.456 & 2.456 \\
+\midrule
+\multicolumn{6}{@{}l}{\emph{Llama-3.1-8B-Instruct}}\\
+Gap, top 128 & 3.704 & 6 & 4 & 1.846 & 1.231 \\
+Gap, bottom 128 & 4.695 & 5 & 5 & 1.214 & 1.214 \\
+Min-K\%++, top 128 & 2.946 & 6 & 5 & 2.321 & 1.934 \\
+Min-K\%++, bottom 128 & 4.362 & 5 & 5 & 1.307 & 1.307 \\
+consensus, top 128 & 3.884 & 6 & 5 & 1.761 & 1.467 \\
+consensus, bottom 128 & 5.420 & 5 & 5 & 1.051 & 1.051 \\
+random draw 1 & 3.523 & 5 & 4 & 1.618 & 1.294 \\
+random draw 2 & 3.816 & 5 & 4 & 1.493 & 1.195 \\
+random draw 3 & 3.702 & 5 & 4 & 1.539 & 1.231 \\
+random draw 4 & 4.012 & 5 & 5 & 1.420 & 1.420 \\
+random draw 5 & 3.611 & 5.5 & 5 & 1.736 & 1.578 \\
+random draw 6 & 3.548 & 6 & 5 & 1.928 & 1.606 \\
+random draw 7 & 3.774 & 5 & 5 & 1.510 & 1.510 \\
+random draw 8 & 3.616 & 6 & 5 & 1.891 & 1.576 \\
+random draw 9 & 3.479 & 5 & 5 & 1.638 & 1.638 \\
+random draw 10 & 3.635 & 5 & 4 & 1.568 & 1.254 \\
+whole pool & 3.591 & 5 & 4 & 1.587 & 1.270 \\
+WildGuardMix & 3.535 & 6 & 5 & 1.934 & 1.612 \\
+WildJailbreak & 4.849 & 5 & 5 & 1.175 & 1.175 \\
+CoCoNot & 4.500 & 5 & 5 & 1.266 & 1.266 \\
+CoCoNot, left out & 5.257 & 5 & 5 & 1.084 & 1.084 \\
+Do-Not-Answer & 2.750 & 6 & 5 & 2.487 & 2.072 \\
+HH-RLHF & 4.291 & 5 & 5 & 1.328 & 1.328 \\
+PKU-SafeRLHF & 2.868 & 6 & 6 & 2.385 & 2.385 \\
+CoCoNot, both poles from T\"ulu's mixture & 3.375 & 4 & 5 & 1.351 & 1.689 \\
+CAA, letter token & 3.931 & 3 & 3 & 0.870 & 0.870 \\
+CAA, answer mean & 2.374 & 3 & 5 & 1.440 & 2.401 \\
