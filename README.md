@@ -1,6 +1,7 @@
 # Genesis Steering
 
-Code and stored results for *Genesis Steering: Better Activation Steering Through Training Data*.
+Code and stored results for *Genesis Steering: Better Activation Steering Through Training Data*
+([arXiv:2610.19114](https://arxiv.org/abs/2610.19114)).
 
 The paper studies which contrastive data make a good refusal steering vector. It compares vectors
 built from the safety datasets in a model's own fine-tuning mixture (its *genesis data*) against
@@ -21,7 +22,7 @@ judge.py                 gemma-2-27b-it judge, shared by parts 2 and 3
 paper/                   generators for the paper's numbers, tables and figures
 ```
 
-Each part holds its scripts and a `results/` directory. The manuscript itself is on arXiv.
+Each part holds its scripts and a `results/` directory. The manuscript itself is on [arXiv](https://arxiv.org/abs/2610.19114).
 
 ## Requirements
 
@@ -145,14 +146,15 @@ Each source dataset carries its own licence and terms, which govern anything reb
 
 ## Citation
 
-The arXiv identifier will be added here once the preprint is announced.
-
 ```bibtex
 @misc{bodin2026genesis,
-  title  = {Genesis Steering: Better Activation Steering Through Training Data},
-  author = {Bodin, Tora and Aubinais, Eric and Torre, Ilaria and Cheng, Chih-Hong},
-  year   = {2026},
-  note   = {arXiv preprint}
+  title         = {Genesis Steering: Better Activation Steering Through Training Data},
+  author        = {Bodin, Tora and Aubinais, Eric and Torre, Ilaria and Cheng, Chih-Hong},
+  year          = {2026},
+  eprint        = {2610.19114},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2610.19114}
 }
 ```
 
